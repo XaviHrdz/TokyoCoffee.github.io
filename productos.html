@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Coffee - Productos</title>
+    <link rel="stylesheet" href="txt.css">
+    <script src="txxt.js" defer></script>
+    <link rel="icon" href="https://github.com/XaviHrdz/Tokyo-Coffee/blob/main/556202_a5b11641c0f359a64a4b38e93afdbdbc-21_11_2022%2017_44_50.png?raw=true" type="image/x-icon">
+    <style>
+        .producto {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .producto img {
+            width: 35%;
+            height: auto;
+            border-radius: 4px 4px 0 0;
+        }
+        .producto h3 {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #ddd;
+        }
+        .producto p {
+            padding: 10px;
+        }
+        .producto button {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #9207bd;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .producto button:hover {
+            background-color: #9f11f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://github.com/XaviHrdz/Tokyo-Coffee/blob/main/Pink%20Simple%20Minimalist%20Skincare%20Shop%20Website%20Dekstop%20Prototype0001.png?raw=true" alt="Tokyo Coffee" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" >Productos</a></li>
+                <li><a href="usuario.html">Usuario</a></li>
+                <li><a href="#localizar-tienda">Tienda</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100024526517420" class="cta-button">Facebook</i></a></li>
+                <li><a href="https://www.instagram.com/fxck.xxavi/" class="cta-button">Instagram</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nuestros-productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto">
+                <img src="https://github.com/XaviHrdz/Tokyo-Coffee/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).jpg?raw=true" alt="Moka Frappe">
+                <h3>Moka Frappe</h3>
+                <p>Prueba nuestro delicioso frappe de moka.</p>
+                <button onclick="comprarProducto('Moka Frappe')">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://github.com/XaviHrdz/Tokyo-Coffee/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.jpg?raw=true" alt="Oreo Frappe">
+                <h3>Oreo Frappe</h3>
+                <p>Disfruta de un frappe con galletas Oreo.</p>
+                <button onclick="comprarProducto('Oreo Frappe')">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://github.com/XaviHrdz/Tokyo-Coffee/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(2).jpg?raw=true" alt="Cappuchino Frappe">
+                <h3>Capuchino Frappe</h3>
+                <p>Prueba nuestro frío frappe de capuchino.</p>
+                <button onclick="comprarProducto('Cappuchino Frappe')">Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#atencion-al-cliente">Atención al Cliente</a></li>
+            <li><a href="#facturacion">Facturación</a></li>
+            <li><a href="#trabaja-con-nosotros">Trabaja con Nosotros</a></li>
+        </ul>
+        <p>&copy; 2024 Tokyo Coffee. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function comprarProducto(producto) {
+            alert('Has comprado ' + producto + '!');
+        }
+    </script>
+</body>
+</html>
